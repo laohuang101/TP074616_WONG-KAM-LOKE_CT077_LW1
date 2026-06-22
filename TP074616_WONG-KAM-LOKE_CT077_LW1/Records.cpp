@@ -38,7 +38,7 @@ bool loadCSV(const string& filename, StudentArray& sa) {
         try { s.cgpa = stod(f5); }
         catch (...) { continue; }
 
-        if (s.cgpa < 0.0 || s.cgpa > 4.0) continue
+        if (s.cgpa < 0.0 || s.cgpa > 4.0) continue;
 
         s.contactNumber = f6;
         sa.push_back(s);
@@ -64,6 +64,10 @@ bool addRecord(StudentArray& sa, const Student& s) {
     sa.push_back(s);
     return true;
 }
+
+// =============================================================
+//  Delete a student record by Student ID — O(n)
+// =============================================================
 
 bool deleteRecord(StudentArray& sa, const string& id) {
     int idx = linearSearchByID(sa, id);
