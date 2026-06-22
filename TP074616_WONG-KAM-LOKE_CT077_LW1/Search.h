@@ -6,5 +6,6 @@
 int linearSearchByID  (const StudentArray& sa, const string& id);
 int linearSearchByName(const StudentArray& sa, const string& name);
 int binarySearchByCGPA(const StudentArray& sa, double cgpa);
+void searchAllByCGPA  (const StudentArray& sa, double cgpa);
 
 #endif

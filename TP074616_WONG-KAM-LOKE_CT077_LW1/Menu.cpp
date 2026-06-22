@@ -54,7 +54,7 @@ void runMenu(StudentArray& sa) {
         cout << "  5.  Search by Name        (Linear  O(n))\n";
         cout << "  6.  Sort by CGPA Ascending  (IntroSort O(n log n))\n";
         cout << "  7.  Sort by CGPA Descending (IntroSort O(n log n))\n";
-        cout << "  8.  Binary Search by CGPA (O(log n) — sort first!)\n";
+        cout << "  8.  Binary Search by CGPA \n";
         cout << "  9.  Load a different dataset\n";
         cout << "  10. Run full benchmark (all 4 datasets)\n";
         cout << "  0.  Exit\n";
@@ -126,16 +126,11 @@ void runMenu(StudentArray& sa) {
             display(sa, 10);
         }
         else if (choice == 8) {
-            double cgpa;
-            cout << "  Enter CGPA to search (array must be sorted): ";
-            cin >> cgpa; cin.ignore();
+            double cgpa = readDouble("  Enter CGPA to search (array must be sorted): ");
             timer.start();
-            int idx = binarySearchByCGPA(sa, cgpa);
+            introsort(sa);
+            searchAllByCGPA(sa, cgpa);
             timer.printElapsed("Binary Search by CGPA");
-            if (idx == -1)
-                cout << "  No record with CGPA = " << cgpa << " found.\n";
-            else
-                printOne(sa.data[idx]);
         }
         else if (choice == 9) {
             string fname;
