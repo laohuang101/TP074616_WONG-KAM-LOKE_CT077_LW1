@@ -6,7 +6,38 @@
 #include "Benchmark.h"
 #include "Timer.h"
 #include <iostream>
+#include <limits>
 using namespace std;
+
+static int readInt(const string& prompt) {
+    int value;
+    while (true) {
+        cout << prompt;
+        if (!(cin >> value)) {
+            cin.clear();
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
+            cout << "  Invalid input. Please enter a number.\n";
+            continue;
+        }
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
+        return value;
+    }
+}
+
+static double readDouble(const string& prompt) {
+    double value;
+    while (true) {
+        cout << prompt;
+        if (!(cin >> value)) {
+            cin.clear();
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
+            cout << "  Invalid input. Please enter a number.\n";
+            continue;
+        }
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
+        return value;
+    }
+}
 
 void runMenu(StudentArray& sa) {
     Timer timer;
@@ -27,9 +58,7 @@ void runMenu(StudentArray& sa) {
         cout << "  9.  Load a different dataset\n";
         cout << "  10. Run full benchmark (all 4 datasets)\n";
         cout << "  0.  Exit\n";
-        cout << "  Choice: ";
-        cin >> choice;
-        cin.ignore();
+        choice = readInt("  Choice: ");
         if (choice == 1) {
             int rows;
             cout << "  Max rows to display (0 = all): ";

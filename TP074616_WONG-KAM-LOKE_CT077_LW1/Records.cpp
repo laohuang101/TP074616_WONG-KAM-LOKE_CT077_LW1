@@ -65,10 +65,6 @@ bool addRecord(StudentArray& sa, const Student& s) {
     return true;
 }
 
-// =============================================================
-//  Delete a student record by Student ID — O(n)
-// =============================================================
-
 bool deleteRecord(StudentArray& sa, const string& id) {
     int idx = linearSearchByID(sa, id);
     if (idx == -1) return false;
