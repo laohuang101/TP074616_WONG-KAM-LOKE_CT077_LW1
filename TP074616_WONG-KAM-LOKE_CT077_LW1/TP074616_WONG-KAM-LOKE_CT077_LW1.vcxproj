@@ -139,7 +139,13 @@
     </Manifest>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="TP074616_WONG-KAM-LOKE_CT077_LW1.cpp" />
+    <ClCompile Include="Benchmark.cpp" />
+    <ClCompile Include="Display.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="Records.cpp" />
+    <ClCompile Include="Search.cpp" />
+    <ClCompile Include="Sort.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="programmes.csv" />
@@ -147,6 +153,17 @@
     <None Include="students_30000.csv" />
     <None Include="students_500.csv" />
     <None Include="students_8000.csv" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Benchmark.h" />
+    <ClInclude Include="Display.h" />
+    <ClInclude Include="Menu.h" />
+    <ClInclude Include="Records.h" />
+    <ClInclude Include="Search.h" />
+    <ClInclude Include="Sort.h" />
+    <ClInclude Include="Student.h" />
+    <ClInclude Include="StudentArray.h" />
+    <ClInclude Include="Timer.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
