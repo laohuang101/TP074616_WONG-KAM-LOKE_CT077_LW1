@@ -1,7 +1,7 @@
-#include "StudentArray.h"
-#include "Records.h"
-#include "Menu.h"
-#include "Timer.h"
+#include "StudentArray.hpp"
+#include "Records.hpp"
+#include "Menu.hpp"
+#include "Timer.hpp"
 #include <iostream>
 using namespace std;
 

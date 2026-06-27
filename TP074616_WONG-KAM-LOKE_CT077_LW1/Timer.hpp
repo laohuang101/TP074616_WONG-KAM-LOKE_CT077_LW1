@@ -17,7 +17,6 @@ struct Timer {
             high_resolution_clock::now() - t0).count();
     }
 
-    // Print elapsed time in us / ms / s
     void printElapsed(const string& label) {
         long long us = microseconds();
         double    ms = us / 1000.0;

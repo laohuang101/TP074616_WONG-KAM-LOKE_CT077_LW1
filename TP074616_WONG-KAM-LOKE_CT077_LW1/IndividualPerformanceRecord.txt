@@ -1,0 +1,40 @@
+Member Name / ID: WONG KAM LOKE / TP074616
+Part: [/] Array     [ ] Linked List
+Sorting Algorithm: Introsort
+Searching Algorithm: Linear Search and Binary Search
+Measurement Unit: Microseconds (us) via C++ <chrono>
+Date Measured: 22/6/2026
+
+PERFORMANCE TABLE
+
+Operation             | n=500 (us) | n=2000 (us) | n=8000 (us) | n=30000 (us) | Big-O Time  | Big-O Space | Notes
+----------------------|------------|-------------|-------------|--------------|-------------|-------------|-------------------------------------------------------
+Add / Insert          | 29         | 142         | 337         | 1554         | O(n)        | O(1)        | Shifting the element in array on insert
+Delete by Student ID  | 30         | 175         | 277         | 1324         | O(n)        | O(1)        | Combination of Linear Search and Shifting Elements
+Search - Linear       | 31         | 96          | 1040        | 1726         | O(n)        | O(1)        | Scanning entire array
+Search - Binary       | 5160       | 23044       | 91533       | 376850       | O(n log n)  | O(log n)    | Must run Introsort first before binary search
+Sort by CGPA          | 3271       | 8980        | 37575       | 213487       | O(n log n)  | O(log n)    | Introsort
+Display All           | 528377     | 2145079     | 8704972     | 32112315     | O(n)        | O(1)        | Read all records
+Count (LL only)       | ___        | ___         | ___         | ___          | O(?)        | O(?)        | N/A
+
+---
+
+GROWTH RATIO ANALYSIS
+
+Operation        | Ratio (n=2000 / n=500)  | Expected Ratio
+-----------------|-------------------------|-------------------------
+Sort by CGPA     | 8980 / 3271 = 2.75x     | O(n log n) approx 5x
+Search - Linear  | 96 / 31 = 3.10x         | O(n) = 4x
+Search - Binary  | 23044 / 5160 = 4.47x    | O(n log n) approx 5x
+
+---
+
+KEY OBSERVATIONS / JUSTIFICATION OF BIG-O
+
+The sorting algorithm applied to sort student CGPA is Introsort. Introsort is a hybrid of Quicksort, Heapsort and Insertion Sort. The time complexity is O(n log n) in all cases and only requires a small amount of space O(log n) to track steps and organise data due to the recursive call stack.
+
+For searching and managing records, efficiency depends on the data handling method. Linear search checks students one by one from the start, with a worst case where every element must be visited — O(n) time. Time taken increases linearly with dataset size and no extra memory is needed.
+
+For binary search, the array must be sorted before every search. Although binary search itself is O(log n), the required Introsort step costs O(n log n), making the total cost per call O(n log n). This is why binary search shows higher times than plain linear search in the table. It also uses O(log n) stack space from the Introsort recursive calls.
+
+For adding and deleting records, the algorithm first uses linear search to locate the target O(n), then shifts all subsequent elements to create or close a gap O(n). Both operations are therefore O(n) overall. Displaying all records visits each record exactly once, giving O(n) time and O(1) space as no additional memory is needed beyond the loop variable.

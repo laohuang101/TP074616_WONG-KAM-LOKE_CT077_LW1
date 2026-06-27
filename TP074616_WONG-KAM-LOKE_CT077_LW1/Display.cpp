@@ -1,4 +1,4 @@
-#include "Display.h"
+#include "Display.hpp"
 #include <iostream>
 using namespace std;
 

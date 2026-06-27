@@ -1,10 +1,10 @@
-#include "Menu.h"
-#include "Records.h"
-#include "Search.h"
-#include "Sort.h"
-#include "Display.h"
-#include "Benchmark.h"
-#include "Timer.h"
+#include "Menu.hpp"
+#include "Records.hpp"
+#include "Search.hpp"
+#include "Sort.hpp"
+#include "Display.hpp"
+#include "Benchmark.hpp"
+#include "Timer.hpp"
 #include <iostream>
 #include <limits>
 using namespace std;

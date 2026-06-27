@@ -155,15 +155,20 @@
     <None Include="students_8000.csv" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Benchmark.h" />
-    <ClInclude Include="Display.h" />
-    <ClInclude Include="Menu.h" />
-    <ClInclude Include="Records.h" />
-    <ClInclude Include="Search.h" />
-    <ClInclude Include="Sort.h" />
-    <ClInclude Include="Student.h" />
-    <ClInclude Include="StudentArray.h" />
-    <ClInclude Include="Timer.h" />
+    <ClInclude Include="Benchmark.hpp" />
+    <ClInclude Include="Display.hpp" />
+    <ClInclude Include="Menu.hpp" />
+    <ClInclude Include="Records.hpp" />
+    <ClInclude Include="Search.hpp" />
+    <ClInclude Include="Sort.hpp" />
+    <ClInclude Include="Student.hpp" />
+    <ClInclude Include="StudentArray.hpp" />
+    <ClInclude Include="Timer.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="DATASETREADME.txt" />
+    <Text Include="IndividualPerformanceRecord.txt" />
+    <Text Include="README.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

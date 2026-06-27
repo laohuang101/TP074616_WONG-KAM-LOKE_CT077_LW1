@@ -1,10 +1,10 @@
-#include "Benchmark.h"
-#include "StudentArray.h"
-#include "Records.h"
-#include "Search.h"
-#include "Sort.h"
-#include "Display.h"
-#include "Timer.h"
+#include "Benchmark.hpp"
+#include "StudentArray.hpp"
+#include "Records.hpp"
+#include "Search.hpp"
+#include "Sort.hpp"
+#include "Display.hpp"
+#include "Timer.hpp"
 #include <iostream>
 using namespace std;
 

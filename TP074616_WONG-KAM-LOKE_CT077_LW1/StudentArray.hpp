@@ -1,7 +1,7 @@
 #ifndef STUDENTARRAY_H
 #define STUDENTARRAY_H
 
-#include "Student.h"
+#include "Student.hpp"
 
 struct StudentArray {
     Student* data;

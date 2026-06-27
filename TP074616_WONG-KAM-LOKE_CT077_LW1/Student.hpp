@@ -4,10 +4,6 @@
 #include <string>
 using namespace std;
 
-// =============================================================
-//  Student struct — one record in the system
-// =============================================================
-
 struct Student {
     string studentID;
     string fullName;

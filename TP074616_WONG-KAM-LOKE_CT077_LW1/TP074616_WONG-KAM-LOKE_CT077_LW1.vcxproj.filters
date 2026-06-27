@@ -55,32 +55,43 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Student.h">
+    <ClInclude Include="Student.hpp">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="StudentArray.h">
+    <ClInclude Include="StudentArray.hpp">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="Timer.h">
+    <ClInclude Include="Timer.hpp">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="Sort.h">
+    <ClInclude Include="Sort.hpp">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="Search.h">
+    <ClInclude Include="Search.hpp">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="Records.h">
+    <ClInclude Include="Records.hpp">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="Display.h">
+    <ClInclude Include="Display.hpp">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="Benchmark.h">
+    <ClInclude Include="Benchmark.hpp">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="Menu.h">
+    <ClInclude Include="Menu.hpp">
       <Filter>Source Files</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="README.txt">
+      <Filter>Source Files</Filter>
+    </Text>
+    <Text Include="DATASETREADME.txt">
+      <Filter>Source Files</Filter>
+    </Text>
+    <Text Include="IndividualPerformanceRecord.txt">
+      <Filter>Source Files</Filter>
+    </Text>
   </ItemGroup>
 </Project>

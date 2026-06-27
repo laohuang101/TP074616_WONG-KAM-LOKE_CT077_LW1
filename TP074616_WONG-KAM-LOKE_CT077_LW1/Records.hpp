@@ -1,7 +1,7 @@
 #ifndef RECORDS_H
 #define RECORDS_H
 
-#include "StudentArray.h"
+#include "StudentArray.hpp"
 
 // =============================================================
 //  Record operations — Add, Delete, Load from CSV

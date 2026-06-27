@@ -1,5 +1,5 @@
-#include "Records.h"
-#include "Search.h"
+#include "Records.hpp"
+#include "Search.hpp"
 #include <fstream>
 #include <sstream>
 #include <iostream>

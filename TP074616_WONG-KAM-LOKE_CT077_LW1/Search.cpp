@@ -1,5 +1,5 @@
-#include "Search.h"
-#include "Display.h"
+#include "Search.hpp"
+#include "Display.hpp"
 #include <iostream>
 using namespace std;
 
